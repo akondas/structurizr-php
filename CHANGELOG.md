@@ -1,4 +1,4 @@
-## [Unreleased] - 2023-01-11
+## [0.4.0] - 2024-06-14
 
 ### Added
 - [#99](https://github.com/structurizr-php/structurizr-php/pull/99) - **Allow PHP 8.0** - [@tomaszhanc](https://github.com/tomaszhanc)
