@@ -1,3 +1,8 @@
+## [Unreleased] - 2024-06-15
+
+### Changed
+- [#249](https://github.com/structurizr-php/structurizr-php/pull/249) - **Drop support for php 7.3, 7.4 and 8.0, add tests for 8.1, 8.2, 8.3** - [@akondas](https://github.com/akondas)
+
 ## [0.4.0] - 2024-06-14
 
 ### Added
