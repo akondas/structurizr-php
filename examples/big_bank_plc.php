@@ -268,44 +268,44 @@ $styles->addElementStyle(FAILOVER_TAG)->opacity(25);
 $styles->addRelationshipStyle(FAILOVER_TAG)->opacity(25)->position(70);
 
 $template = new StructurizrDocumentationTemplate($workspace);
-        $template->addContextSection(
-            $internetBankingSystem,
-            Format::markdown(),
-            "Here is some context about the Internet Banking System...\n" .
-            "![](embed:SystemLandscape)\n" .
-            "![](embed:SystemContext)\n" .
-            "### Internet Banking System\n...\n" .
-            "### Mainframe Banking System\n...\n"
-        );
-        $template->addContainersSection(
-            $internetBankingSystem,
-            Format::markdown(),
-            "Here is some information about the containers within the Internet Banking System...\n" .
-            "![](embed:Containers)\n" .
-            "### Web Application\n...\n" .
-            "### Database\n...\n"
-        );
-        $template->addComponentsSection(
-            $webApplication,
-            Format::markdown(),
-            "Here is some information about the API Application...\n" .
-            "![](embed:Components)\n" .
-            "### Sign in process\n" .
-            "Here is some information about the Sign In Controller, including how the sign in process works...\n" .
-            '![](embed:SignIn)'
-        );
-        $template->addDevelopmentEnvironmentSection(
-            $internetBankingSystem,
-            Format::markdown(),
-            "Here is some information about how to set up a development environment for the Internet Banking System...\n" .
-            'image::embed:DevelopmentDeployment[]'
-        );
-        $template->addDeploymentSection(
-            $internetBankingSystem,
-            Format::markdown(),
-            "Here is some information about the live deployment environment for the Internet Banking System...\n" .
-            'image::embed:LiveDeployment[]'
-        );
+$template->addContextSection(
+    $internetBankingSystem,
+    Format::markdown(),
+    "Here is some context about the Internet Banking System...\n" .
+    "![](embed:SystemLandscape)\n" .
+    "![](embed:SystemContext)\n" .
+    "### Internet Banking System\n...\n" .
+    "### Mainframe Banking System\n...\n"
+);
+$template->addContainersSection(
+    $internetBankingSystem,
+    Format::markdown(),
+    "Here is some information about the containers within the Internet Banking System...\n" .
+    "![](embed:Containers)\n" .
+    "### Web Application\n...\n" .
+    "### Database\n...\n"
+);
+$template->addComponentsSection(
+    $webApplication,
+    Format::markdown(),
+    "Here is some information about the API Application...\n" .
+    "![](embed:Components)\n" .
+    "### Sign in process\n" .
+    "Here is some information about the Sign In Controller, including how the sign in process works...\n" .
+    '![](embed:SignIn)'
+);
+$template->addDevelopmentEnvironmentSection(
+    $internetBankingSystem,
+    Format::markdown(),
+    "Here is some information about how to set up a development environment for the Internet Banking System...\n" .
+    'image::embed:DevelopmentDeployment[]'
+);
+$template->addDeploymentSection(
+    $internetBankingSystem,
+    Format::markdown(),
+    "Here is some information about the live deployment environment for the Internet Banking System...\n" .
+    'image::embed:LiveDeployment[]'
+);
 
 $client = new Client(
     new Credentials((string) \getenv('STRUCTURIZR_API_KEY'), (string) \getenv('STRUCTURIZR_API_SECRET')),

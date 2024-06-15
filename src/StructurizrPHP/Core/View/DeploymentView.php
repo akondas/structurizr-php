@@ -161,7 +161,7 @@ final class DeploymentView extends View
             $container = $containerInstance->getContainer();
 
             if ($this->softwareSystem === null || $container->getParent(
-                )->equals($this->softwareSystem)) {
+            )->equals($this->softwareSystem)) {
                 return true;
             }
         }
@@ -197,7 +197,7 @@ final class DeploymentView extends View
             $container = $containerInstance->getContainer();
 
             if ($this->softwareSystem === null || $container->getParent(
-                )->equals($this->softwareSystem)) {
+            )->equals($this->softwareSystem)) {
                 $this->addElement($containerInstance, $addRelationships);
             }
         }

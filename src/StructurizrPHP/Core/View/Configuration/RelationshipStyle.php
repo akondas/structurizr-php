@@ -65,7 +65,7 @@ final class RelationshipStyle
     private $dashed;
 
     /**
-     * @var null|routing
+     * @var null|Routing
      *
      * The routing algorithm used when rendering lines
      */
